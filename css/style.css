@@ -808,6 +808,7 @@ body {
   top: 0;
 }
 .travel-achievement {
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -839,7 +840,7 @@ body {
   width: 35px;
   height: 35px;
   border: 2px solid #e5e5e5;
-  left: 50px;
+  left: 20px;
 }
 .travel-achievement input:checked + label:before {
   background: url("/img/check.png") no-repeat 7px 9px;
