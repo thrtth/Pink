@@ -1,0 +1,424 @@
+.query-form {
+  width: @wrap-width;
+  margin: 0 auto;
+  margin-top: 40px;
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__note {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-page;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+    & span {
+      color: @color-text-contacts;
+    }
+  }
+}
+.query-name {
+  margin-bottom: 40px;
+  & label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+
+  & input {
+    display: block;
+    margin-bottom: 20px;
+    width: 260px;
+    height: 55px;
+    border: 2px solid @color-table-border;
+    padding-left: 20px;
+    margin-left: 20px;  
+  }
+  & input::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+  }
+  & input:-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+  }
+}
+
+.query-app {
+  position: relative;
+  background: @bg-color-second;
+  padding-bottom: 5px;
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+  }
+  & label {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 80px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    line-height: 40px;
+  }
+  & label:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 12px solid @bg-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px @color-table-border;
+    background: @bg-color;
+    left: 20px;
+  }
+  & input:checked + label:before {
+    background: @color-text-contacts;
+  }
+}
+
+.travel-date {
+  
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  & label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  & input {
+    display: block;
+    margin-bottom: 20px;
+    width: 260px;
+    height: 55px;
+    border: 2px solid @color-table-border;
+    padding-left: 20px;
+    margin-left: 20px;  
+  }
+  & input::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+  }
+  & input:-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+  }
+  
+  & :nth-child(6) {
+    background: @bg-color-second;
+  }
+  &__count {
+    position: relative;
+    & input {
+      text-align: center;
+      width: 170px;
+      margin-left: 75px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    & .minus {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 57px;
+      border: 2px solid @color-table-border;
+      left: 18px;
+      background: url("../img/minus.png") no-repeat 15px 27px;
+    }
+    & .plus {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 57px;
+      border: 2px solid @color-table-border;
+      right: 14px;
+      bottom: 0px;
+      background: url("../img/plus.png") no-repeat 15px 15px;
+    }
+   }
+  }
+
+.travel-frends {
+  background: @bg-color-second;
+  margin-bottom: 40px;
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  & input::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+    }
+  & input:-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @color-text-page;
+    line-height: 15px;
+    }
+  & input {
+    display: block;
+    text-align: center;
+    width: 225px;
+    height: 55px;
+    border: 2px solid @color-table-border;
+    margin-left: 53px;
+    margin-bottom: 20px;
+  }
+  & label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    margin-left: 80px;
+    margin-bottom: 15px;
+  }
+  &__count {
+    position: relative;
+    margin-bottom: 40px;
+    & input {
+      display: block;
+      text-align: center;
+      width: 170px;
+      height: 55px;
+      margin-left: 75px;
+      border: 2px solid @color-table-border;
+      padding-left: 0px;
+      padding-right: 0px;
+      background: @bg-color-second;
+    }
+    & .minus {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 57px;
+      border: 2px solid @color-table-border;
+      left: 18px;
+      background: url("../img/minus.png") no-repeat 15px 27px @bg-color;
+    }
+    & .plus {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 57px;
+      border: 2px solid @color-table-border;
+      right: 14px;
+      bottom: 0px;
+      background: url("../img/plus.png") no-repeat 15px 15px @bg-color;
+    }
+   }
+  &__name {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    border-top: 2px solid @color-table-border;
+    &--first {
+      position: relative;
+      margin-bottom: 40px;
+      &:before {
+        position: absolute;
+        content: "1";
+        width: 55px;
+        height: 57px;
+        border: 2px solid @color-table-border;
+        text-align: center;
+        line-height: 57px;
+        top: 34px;
+        left: -4px;
+      }
+      &:after {
+        position: absolute;
+        content: "№";
+        color: @color-text-contacts;
+        left: 20px;
+        top: 0;
+      }
+    }
+    &--second {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "2";
+        width: 55px;
+        height: 57px;
+        border: 2px solid @color-table-border;
+        text-align: center;
+        line-height: 57px;
+        top: 34px;
+        left: -4px;
+      }
+      &:after {
+        position: absolute;
+        content: "№";
+        color: @color-text-contacts;
+        left: 20px;
+        top: 0;
+      }
+    }
+  }
+}
+
+.travel-achievement {
+  padding-left: 20px;
+  padding-right: 20px;
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+  }
+  & label {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 60px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    line-height: 35px;
+  }
+  & label:before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 2px solid @color-table-border;
+    left: 50px;
+  }
+  & input:checked + label:before {
+    background: url("/img/check.png") no-repeat 7px 9px;
+  }
+}
+
+.travel-photo {
+  background: @bg-color-second;
+  margin-bottom: 40px;
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @color-text-contacts;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 38px;
+  }
+  &__btn-load {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 55px;
+    color: @color-text-page;
+    width: 280px;
+    height: 55px;
+    border: 2px solid @color-table-border;
+    background: @bg-color;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  &__block {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 35px;
+    border-top: 2px solid @color-table-border;
+  }
+  &__name {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin-right: 32px;
+    margin-bottom: 20px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 33px;
+      background: url("/img/cross-photo.png") no-repeat;
+      right: -15px;
+      top: -17px;
+    }
+  }
+  
+}
+
+.send-btn {
+    & input {
+      width: 280px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 60px;
+      color: @color-text-header;
+      background: @color-send-btn;
+      margin-left: 20px;
+      margin-bottom: 35px;
+      border: none;
+      border-radius: 3px;
+    }
+    
+  }

@@ -1,0 +1,40 @@
+.page-header {
+  width: @wrap-width;
+  background: url("../img/back-photo.jpg");
+  margin: 0 auto;
+  color: @color-text-header; 
+  margin-bottom: 20px;
+  &__top {
+    position: relative;
+    background-color: @bg-color-header-top;
+    padding: 20px;
+    .clearfix;
+  }
+}
+
+.page-header-block {
+  text-align: center;
+  &__text {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px;
+    padding-bottom: 45px;
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.page-header-logo {
+  float: left;
+}
+
+.page-header-menu {
+  float: right;
+}
+
+.page-header-popup-menu {
+  position: absolute;
+  display: none;
+}

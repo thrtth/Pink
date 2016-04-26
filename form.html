@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>pink</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   
+    <div class="page-header">
+       <div class="page-header__top">
+          <div class="page-header-logo">
+             <a href="#"><img src="img/pink-logo.png" alt="PINK"></a>
+          </div>
+          <div class="page-header-menu">
+              <a href="#"><img src="img/menu-toggle.png"></a>
+          </div>
+          <ul class="page-header-popup-menu">
+              <li><a href="#">информация</a></li>
+              <li><a href="#">возможности</a></li>
+              <li><a href="#">отзывы</a></li>
+              <li><a href="#">стоимость</a></li>
+          </ul>
+        </div>
+        <div class="page-header-block">
+            <p class="page-header-block__text">Конкурс на самое безбашеное путешествие с Пинк</p>
+        </div>
+    </div>
+    
+    <div class="query-form">
+        <p class="query-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        
+        <form class="query-form__main">
+            
+            <div class="query-name">
+            
+                 <label>имя:*</label>
+                 <input type="text" name="first-name" placeholder="Введите ваше имя">
+                 
+                 <label>фамилия:*</label>
+                 <input type="text" name="last-name" placeholder="Укажите фамилию">
+                 
+                 <label>отчество:</label>
+                 <input type="text" name="second-name" placeholder="Ну и отчество тоже">
+                  
+            </div>
+            
+            <div class="query-app">
+               
+                <p class="query-app__title">с каким приложением путешествовали?*</p>
+                
+                <input type="radio" checked id="radio-1" name="app-os">
+                <label for="radio-1">Pink для iOS</label>
+                
+                <input type="radio" id="radio-2" name="app-os">
+                <label for="radio-2">Pink на Android</label>
+                
+                <input type="radio" id="radio-3" name="app-os">
+                <label for="radio-3">Windows Phone</label>
+
+            </div>
+            
+            <div class="travel-date">
+                <p class="travel-date__title">когда вы путешествовали?*</p>
+
+                <input type="text" placeholder="1 апреля 2015">
+                <label>дата выезда</label>
+                <div class="travel-date__count">
+                  <a class="minus" href="#"></a>   
+                  <input type="text" placeholder="10 дней">
+                  <a class="plus" href="#"></a>
+                </div>
+                <label>продолжительность</label>
+                   
+                <input type="text" placeholder="1 апреля 2015">
+                <label>дата возвращения</label>
+
+            </div>
+            
+            <div class="travel-frends">
+               
+                <p class="travel-frends__title">количество попутчиков*</p>
+                <div class="travel-frends__count">
+                <a class="minus" href="#"></a>
+                <input type="text" placeholder="2 чел">
+                <a class="plus" href="#"></a>
+                </div>
+                
+                <div class="travel-frends__name">
+                  <div class="travel-frends__name--first">
+                    <label>имя:*</label>
+                    <input type="text" placeholder="Введите ваше имя">
+                
+                    <label>прозвище:</label>    
+                    <input type="text" placeholder="Ну как же без этого!">
+                  </div>
+                
+                  <div class="travel-frends__name--second">
+                    <label>имя:*</label>    
+                    <input type="text" placeholder="Введите ваше имя">
+                
+                    <label>прозвище:</label>    
+                    <input type="text" placeholder="Ну как же без этого!">
+                  </div>
+                </div>
+            
+            </div>
+            
+            <div class="travel-achievement">
+               
+                <p class="travel-achievement__title">ваши безбашенные достижения в путешествии</p>
+
+                <input type="checkbox" id="check-1" checked>
+                <label for="check-1">Сделал селфи с акулой</label>
+                
+                <input type="checkbox" id="check-2" checked>
+                <label for="check-2">Обгорел на пляже</label>
+                
+                <input type="checkbox" id="check-3">
+                <label for="check-3">Видел Чака Норриса</label>
+                
+                <input type="checkbox" id="check-4">
+                <label for="check-4">Накупил сувениров</label>
+                
+                <input type="checkbox" id="check-5" checked>
+                <label for="check-5">Удержал башню</label>
+                
+                <input type="checkbox" id="check-6">
+                <label for="check-6">Разгромил отель</label>
+
+            </div>
+            
+            <div class="travel-photo">
+               
+                <p class="travel-photo__title">ваши фотографии из поездки*</p>
+                <a class="travel-photo__btn-load" href="#">загрузить фото</a>
+                
+                <div class="travel-photo__block">
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img1.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-1.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img2.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-2.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img3.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-3.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img4.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-4.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img5.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-5.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img6.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-6.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img7.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-7.jpg</p>
+                </div>
+                
+                <div class="travel-photo__item">
+                    <a href="#"><img src="img/img8.jpg" alt="photo"></a>
+                    <p class="travel-photo__name">img-8.jpg</p>
+                </div>
+                </div>
+                
+            </div>
+            
+            <div class="send-btn">
+
+                <input type="submit" value="отправить форму">
+
+            </div>
+            
+        </form>    
+            
+        <p class="query-form__note"><span>*</span> — обязательные поля</p>
+      
+    </div>
+        
+    <div class="footer">
+        <div class="footer__logo">
+            <a href="#"><img src="img/pink-logo-footer.png" alt="PINK"></a>
+        </div>    
+        <div class="social-buttons">
+            <a href="#" class="social-buttons__tw"></a>
+            <a href="#" class="social-buttons__fb"></a>
+            <a href="#" class="social-buttons__tr"></a>
+        </div>
+        <a class="footer__developer" href="#">Разработано</a>
+    </div>
+    
+</body>
+</html>

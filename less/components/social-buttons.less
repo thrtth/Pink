@@ -1,0 +1,24 @@
+.btn-style {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 3px solid @color-table-border;
+  margin-right: 10px;
+}
+
+.social-buttons {
+  margin-bottom: 40px;
+  &__tw {
+    .btn-style; 
+    background: url("../img/tw-logo.png") no-repeat 14px 16px;
+  }
+  &__fb {
+    .btn-style; 
+    background: url("../img/fb-logo.png") no-repeat 19px 14px;
+  }
+  &__tr {
+    .btn-style; 
+    background: url("../img/tr-logo.png") no-repeat 18px 16px;
+  }
+}

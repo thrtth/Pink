@@ -1,0 +1,20 @@
+.main-features {
+  position: relative;
+  background-color: @bg-color-second;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -34px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 34px 320px;
+    border-color: transparent transparent @bg-color-second transparent;
+  }
+}

@@ -1,0 +1,26 @@
+.blog-pages {
+  width: @wrap-width;
+  margin: 0 auto;
+  margin-bottom: 60px;
+    
+  &__btn {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    border: 2px solid @color-table-border;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 58px;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: @color-text-page;
+    &.current {
+      border-color: @color-text-contacts;
+    }
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+}

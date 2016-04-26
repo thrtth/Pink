@@ -1,0 +1,26 @@
+.footer {
+  width: @wrap-width;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  &__logo {
+    margin-bottom: 35px;
+  }
+  &__developer {
+    position: relative;
+    text-decoration: none;
+    color: @color-text-page;
+    font-size: 14px;
+    font-weight: 400;
+    left: -20px;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 27px;
+      height: 34px;
+      background: url("../img/dev-logo.png");
+      right: -40px;
+      top: -4px;
+    }
+  }
+}
